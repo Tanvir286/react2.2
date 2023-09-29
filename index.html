@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+    <title>React2.0</title>
+    <link rel="shortcut icon" href="./images/favi.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body>
+    
+         <!-- ==========================
+                Navbar Area Start
+        ============================ -->
+        <nav class="py-4  absolute left-0 top-0 z-30 w-full">
+            <div class="max-w-container mx-auto">
+                <div class="flex justify-between ">
+                      <!-- logo part -->
+                      <div class="w-[30%]  sm:w-auto lg:w-1/4 flex items-center">
+                         <img src="./images/logo.png" alt="" class="">
+                      </div>
+                      <!-- logo part -->
+                      <!-- Menu part -->
+                       <div class="lg:w-2/4 flex justify-center">
+                            <ul class="nav-links flex  items-center lg:gap-x-36 xl:gap-x-50 font-IBM font-medium  text-3xl lg:text-lg xl:text-xl lg:static absolute w-full lg:w-auto lg:flex-row flex-col bg-primary lg:bg-transparent left-[-100%] top-[75%] cursor-pointer duration-500 pl-3 md:pl-0  pt-20 lg:pt-0  pb-64 lg:pb-0  gap-y-56 z-40">
+                                <li class="text-white hover:text-primary duration-500">Home</li>
+                                <li class="text-white hover:text-primary duration-500">About Us</li>
+                                <li class="text-white hover:text-primary duration-500">Activities</li>
+                                <li class="text-white hover:text-primary duration-500">Latest News</li>
+                                <li class="text-white hover:text-primary duration-500">Contact</li>
+                            </ul>
+                       </div>
+                        <!-- Menu part -->
+                        <!-- button part -->
+                        <div class="lg:w-1/4 flex lg:justify-end items-center">
+                            <a href="" class="bg-primary py-2 px-2 sm:px-7 inline-block font-IBM font-medium   sm:text-lg text-white border border-transparent hover:border-primary  duration-500  rounded-md ml-4 mr-[-18px] sm:mr-0 ">Get Started</a>
+                              <!-- toggle button start -->
+                              <div class="flex items-center text-white">
+                                  <ion-icon onclick="onToggleMenu(this)" name="menu" class=" text-4xl cursor-pointer lg:hidden inline-block ml-5 lg:ml-0 mr-6  lg:mr-0"></ion-icon>
+                              </div>
+                              <!-- toggle button end -->
+                        </div>
+                        <!-- button part -->                      
+                </div>
+            </div>
+         </nav>
+         <!-- ==========================
+                Navbar Area End
+        ============================ -->
+        <!-- ========================== 
+                Banner Area Start
+        ============================ -->
+        <section class="text-center pt-291 pb-271 relative "
+                         style="background: url(./images/banner.png) no-repeat center; background-size: cover;">
+             <h1 class="font-IBM font-bold text-4xl sm:text-5xl lg:text-7xl text-white max-w-819 mx-auto leading-tight">Experience The Spirit Of Adventure Sports</h1>
+             <div class="mt-12">
+                    <a href="" class="bg-primary py-4 lg:px-10  inline-block font-IBM font-medium text-lg text-white  hover:bg-white duration-500 hover:text-black rounded-md lg:mr-5 min-w-300 lg:min-w-0">Explore Activities</a>
+                     <br class="lg:hidden">
+                    <a href="" class="bg-primary py-4 lg:px-10 inline-block font-IBM font-medium text-lg text-white  hover:bg-white duration-500 hover:text-black rounded-md min-w-300 lg:min-w-0 mt-5 lg:mt-0">Who We Are</a>
+             </div>
+        </section>
+        <!-- ========================== 
+                Banner Area End
+        ============================ -->
+        <!-- ========================== 
+              Addventure Area Start
+        ============================ -->
+        <section class="lg:py-100 p-3.5">
+            <div class="max-w-container mx-auto">
+                <div class="flex">
+                     <!-- left part -->
+                     <div class="lg:w-1/2 w-full pt-10">
+                        <h6 class="font-yellowtail font-normal text-3xl text-third text-center lg:text-left">Feel The Excitement </h6>
+                        <h2 class="font-IBM font-bold text-3xl lg:text-54 text-secondary leading-normal text-center lg:text-left">Join Us And Embark On New Adventures</h2>
+                        <div class="h-0.5 w-100 bg-hightlight my-6 hidden lg:block"></div>
+                        <p class="font-IBM font-normal text-lg text-secondary max-w-590 mx-auto text-center lg:mx-0 lg:text-left mt-5">Dolor sit amet consectetur adipiscing elits eiusmod tempor incididunts laboreyse dolore mag aliqua. Quis ipsum supendise ultrices gravid. Risus commodo viverra sed ipsum maecenas.</p>
+                         <!-- ul box -->
+                        <div class="mt-4">
+                            <div class="flex py-5  justify-center lg:justify-start">
+                                <img src="./images/check box.png" alt="" class="object-contain">
+                                <p class="font-IBM font-normal text-lg ml-5 ">Unde omnis iste natus error sit voluptatem dolore</p>
+                            </div>
+                            <div class="flex py-5 justify-center lg:justify-start">
+                                <img src="./images/check box.png" alt=""class="object-contain">
+                                <p class="font-IBM font-normal text-lg ml-5">Eaque ipsa quae ab illo inventore veritatis quasi que</p>
+                            </div>
+                            <div class="flex py-5 justify-center lg:justify-start">
+                                <img src="./images/check box.png" alt=""class="object-contain">
+                                <p class="font-IBM font-normal text-lg ml-5">UEaque ipsa quae ab illo inventore veritatis quasi que</p>
+                            </div>
+                         </div>
+                         <!-- ul box -->
+                         <!-- Buttton -->
+                         <div class="text-center lg:text-left">
+                            <a href="" class="bg-primary py-4 px-5 inline-block font-IBM font-medium text-lg text-white   duration-500 lg:hover:text-black rounded-md mt-5 min-w-300 lg:min-w-0 text-center ">Discover More</a>
+                         </div>
+                          <!-- Buttton -->
+                     </div>
+                      <!-- left part -->
+                      <!-- Right part -->
+                     <div class="w-1/2  hidden lg:block">
+                         <div class="flex justify-end items-center gap-x-60 ">
+                            <img src="./images/adventure2.png" alt="" class="w-full block object-contain ">
+                            <img src="./images/adventure.png" alt="" class="lg:w-full block object-contain h-110">
+                         </div>
+                       
+                     </div>
+                     <!-- Right part -->
+                </div>
+                <!-- box part -->
+                <div class="sm:flex justify-between flex-wrap  mt-20 p-3.5 gap-5">
+                    <!-- single item part -->
+                    <div class="lg:w-25 relative sm:w-49  p-8 bg-five text-center box-border max-w-460 sm:max-w-none mx-auto sm:mx-0 mb-4 sm:mb-0 sm:hover:bg-six duration-500 rounded-md group">
+                        <h3 class="font-IBM font-bold text-80">10+</h3>
+                        <p class="font-IBM font-normal text-lg">Sports Activities</p>
+                        <img src="./images/bg2.png" alt="" class="absolute top-0 left-0  invisible lg:group-hover:visible duration-500">
+                    </div>
+                    <!-- single item part -->
+                    <div class="lg:w-25 relative sm:w-49  p-8 bg-five text-center box-border max-w-460 sm:max-w-none mx-auto sm:mx-0 mb-4 sm:mb-0  sm:hover:bg-six duration-500 rounded-md group">
+                        <h3 class="font-IBM font-bold text-80">3k+</h3>
+                        <p class="font-IBM font-normal text-lg">Registered Enthusiasts</p>
+                        <img src="./images/bg2.png" alt="" class="absolute top-0 left-0  invisible lg:group-hover:visible duration-100">
+                    </div>
+                    <!-- single item part -->
+                    <div class="lg:w-25 relative sm:w-49  p-8  bg-five text-center box-border max-w-460 sm:max-w-none mx-auto sm:mx-0 mb-4 sm:mb-0  sm:hover:bg-six duration-500 rounded-md group">
+                        <h3 class="font-IBM font-bold text-80">15k+</h3>
+                        <p class="font-IBM font-normal text-lg">Years of Experience</p>
+                        <img src="./images/bg2.png" alt="" class="absolute top-0 left-0  invisible lg:group-hover:visible duration-500">
+                    </div>
+                    <!-- single item part -->
+                    <div class="lg:w-25 relative sm:w-49  p-8  bg-five text-center box-border max-w-460 sm:max-w-none mx-auto sm:mx-0 mb-4 sm:mb-0  sm:hover:bg-six duration-500 rounded-md group">
+                        <h3 class="font-IBM font-bold text-80">9.5</h3> 
+                        <p class="font-IBM font-normal text-lg">Average Rating</p>
+                        <img src="./images/bg2.png" alt="" class="absolute top-0 left-0  invisible  lg:group-hover:visible duration-500">
+                    </div>
+                    <!-- single item part -->
+                </div>
+                <!-- box part -->
+            </div>
+         </section>
+         <!-- ========================== 
+              Addventure Area End
+         ============================ -->
+         <!-- ========================== 
+                Sports Area Start
+         ============================ -->
+         <section class="lg:py-32 py-14"
+                       style="background: url(./images/sports-banner.png) no-repeat center; background-size: cover;">
+           <div class="max-w-container mx-auto">
+                 <!-- title part start -->
+                 <div class="lg:flex  p-5 lg:p-2">
+                       <div class="lg:w-1/3">
+                          <h6 class="font-yellowtail font-normal text-3xl text-primary text-center lg:text-left">Live The Excitement</h6>
+                          <h2 class="font-IBM font-bold text-3xl xl:text-54 text-white leading-normal text-center lg:text-left mb-5 lg:mb-0">Extreme Sports Activities</h2>
+                          <div class="h-0.5 w-60 bg-hightlight my-6 hidden lg:block"></div>
+                       </div>
+                       <div class="lg:w-2/3 lg:mt-12">
+                           <p class="font-IBM font-normal text-lg text-white lg:max-w-638  lg:ml-14 xl:ml-28 text-center lg:text-left">Dolor sit amet consectetur adipiscing elit sed con eiusmod tempor incididunt labore etys dolore magna aliqua. Quis ipsum suspendisse ultrices gravida risus ipsum dolore commodo viverra maecenas.</p>
+                       </div>
+                 </div>  
+                 <!-- title part end -->
+                 <!-- box items part -->
+                  <div class="sm:flex justify-between flex-wrap gap-y-10 p-5 lg:p-2 xl:p-0 group">
+                       <!-- single items start -->
+                       <div class="lg:w-32 sm:w-49 mt-5 lg:mt-0 max-w-460 sm:max-w-none mx-auto sm:mx-0 shadow-lg  lg:group-hover:blur-sm lg:hover:!blur-none lg:group-hover:scale-[0.85] lg:hover:!scale-100 duration-500">
+                         <img src="./images/sports1.png" alt="" class="block object-cover w-full ">
+                          <div class="text-center py-6 bg-siven rounded-b-lg">
+                            <h4 class="font-IBM font-bold text-3xl text-white">Mountain Biking</h4>
+                            <p class="font-IBM font-normal text-lg text-white mt-4">Dolor sit amet magna</p>
+                          </div>
+                       </div>
+                        <!-- single items end -->
+                       <!-- single items start -->
+                       <div class="lg:w-32 sm:w-49 mt-5 lg:mt-0 max-w-460 sm:max-w-none mx-auto sm:mx-0 shadow-lg lg:group-hover:blur-sm  lg:hover:!blur-none lg:group-hover:scale-[0.85] lg:hover:!scale-100 duration-500">
+                         <img src="./images/sports2.png" alt="" class="block object-cover w-full rounded-t-lg">
+                          <div class="text-center py-6 bg-siven rounded-b-lg">
+                            <h4 class="font-IBM font-bold text-3xl text-white">Snow Sports</h4>
+                            <p class="font-IBM font-normal text-lg text-white mt-4">Dolor sit amet magna</p>
+                          </div>
+                       </div>
+                        <!-- single items end -->
+                        <!-- single items start -->
+                       <div class="lg:w-32 sm:w-49 mt-5 lg:mt-0 max-w-460 sm:max-w-none mx-auto sm:mx-0 shadow-lg lg:group-hover:blur-sm  lg:hover:!blur-none lg:group-hover:scale-[0.85] lg:hover:!scale-100 duration-500">
+                         <img src="./images/sports3.png" alt="" class="block object-cover w-full rounded-t-lg">
+                          <div class="text-center py-6 bg-siven rounded-b-lg">
+                            <h4 class="font-IBM font-bold text-3xl text-white">Surfing</h4>
+                            <p class="font-IBM font-normal text-lg text-white mt-4">Dolor sit amet magna</p>
+                          </div>
+                       </div>
+                        <!-- single items end -->
+                        <!-- single items start -->
+                       <div class="lg:w-32 sm:w-49 mt-5 lg:mt-0 max-w-460 sm:max-w-none mx-auto sm:mx-0 shadow-lg lg:group-hover:blur-sm  lg:hover:!blur-none lg:group-hover:scale-[0.85] lg:hover:!scale-100 duration-500">
+                         <img src="./images/sports4.png" alt="" class="block object-cover w-full rounded-t-lg">
+                          <div class="text-center py-6 bg-siven rounded-b-lg">
+                            <h4 class="font-IBM font-bold text-3xl text-white">Skateboarding</h4>
+                            <p class="font-IBM font-normal text-lg text-white mt-4">Dolor sit amet magna</p>
+                          </div>
+                       </div>
+                        <!-- single items end -->
+                        <!-- single items start-->
+                        <div class="lg:w-32 sm:w-49 mt-5 lg:mt-0 max-w-460 sm:max-w-none mx-auto sm:mx-0 shadow-lg lg:group-hover:blur-sm  lg:hover:!blur-none lg:group-hover:scale-[0.85] lg:hover:!scale-100 duration-500">
+                            <img src="./images/sports5.png" alt="" class="block object-cover w-full rounded-t-lg">
+                             <div class="text-center py-6 bg-siven rounded-b-lg">
+                               <h4 class="font-IBM font-bold text-3xl text-white">Jet Skiing</h4>
+                               <p class="font-IBM font-normal text-lg text-white mt-4">Dolor sit amet magna</p>
+                             </div>
+                         </div>
+                         <!-- single items end -->
+                        <!-- single items start-->
+                        <div class="lg:w-32 sm:w-49 mt-5 lg:mt-0 max-w-460 sm:max-w-none mx-auto sm:mx-0 shadow-lg lg:group-hover:blur-sm  lg:hover:!blur-none lg:group-hover:scale-[0.85] lg:hover:!scale-100 duration-500">
+                            <img src="./images/sports6.png" alt="" class="block object-cover w-full rounded-t-lg">
+                             <div class="text-center py-6 bg-siven rounded-b-lg">
+                               <h4 class="font-IBM font-bold text-3xl text-white">Ice Climbing</h4>
+                               <p class="font-IBM font-normal text-lg text-white mt-4">Dolor sit amet magna</p>
+                             </div>
+                         </div>
+                         <!-- single items end -->
+                        <!-- single items start-->               
+                  </div>
+                  <!-- box items part -->
+                  <h2 class="font-Arizonia font-normal text-5xl sm:text-7xl  xl:text-160 leading-normal text-center text-white my-10 ">Extreme Sports</h2>
+           </div>
+         </section>
+         <!-- ========================== 
+                Sports Area  End
+         ============================ -->
+         <!-- ========================== 
+               Boundaries Area  start
+         ============================ -->
+         <section class="py-14 bg-primary">
+             <div class="max-w-container mx-auto">
+                 <!-- title part area -->
+                 <div class="text-center p-5 sm:p-0 px-3.5">
+                     <img src="./images/logo2.png" alt="" class="inline-block mb-6">
+                     <h3 class="font-IBM font-bold text-xl sm:text-3xl lg:text-54 text-white lg:max-w-1298 mx-auto lg:leading-tight mb-10">Extreme Sports Will Test Your Limits And Push The Boundaries To The Max</h3>
+                     <p class="font-IBM font-bold text-lg lg:text-3xl text-white">Be Prepared To Experience The New Adventures</p>
+                     <div class="mt-12">
+                        <a href="" class="bg-nine py-4 px-10 inline-block font-IBM font-medium text-lg  text-white border border-transparent hover:border-white hover:bg-transparent duration-500  rounded-md lg:mr-5 min-w-300 sm:min-w-0">Discover More</a>
+                         <br class="sm:hidden">
+                        <a href="" class="bg-nine py-4 px-10 inline-block font-IBM font-medium text-lg text-white border border-transparent hover:border-white  hover:bg-transparent duration-500  rounded-md min-w-300 sm:min-w-0 mt-5 lg:mt-0"> <i class="fa-solid fa-play pr-4"></i> View The Demo</a>
+                    </div>
+                 </div>
+                 <!-- title part area -->
+                  <div class="sm:flex justify-between mt-8 px-3.5">
+                     <!-- item part start -->
+                       <div class="sm:w-32 relative group max-w-460 sm:max-w-none mx-auto sm:mx-0 mt-5 sm:mt-0 box-border overflow-hidden rounded-lg">
+                        <img src="./images/35.png" alt="" class="w-full h-full lg:group-hover:rotate-12 lg:group-hover:scale-125 duration-500" >
+                         <div class="absolute top-0 left-0 w-full h-full  bg-gradient-to-t from-black duration-500  rounded-lg overflow-hidden flex justify-start items-end lg:sm:max-lg:translate-y-[85%] lg:translate-y-[25%] lg:group-hover:translate-y-0">
+                            <div class="">
+                                <p class=" ml-10 sm:max-md:ml-5 text-white font-IBM font-bold xl:text-40 text-3xl sm:text-xl  group-hover:pb-0">Sports Videos</p>
+                                <p class=" ml-10 sm:max-md:ml-5 text-white font-IBM font-normal xl:text-3xl sm:text-base text-lg mb-5 mt-5 sm:max-md:my-2 lg:opacity-0 lg:group-hover:opacity-100 ">Get inspired</p> 
+                                <div class="h-0.5 w-52 xl:w-72 ml-10 sm:max-md:ml-5 bg-white sm:max-lg:w-40 lg:opacity-0 lg:group-hover:opacity-100 "></div>                      
+                                <p class=" ml-10 sm:max-md:ml-5 text-white font-IBM font-normal xl:text-lg  py-5 lg:opacity-0 lg:group-hover:opacity-100 ">Dolor sit amet magna <span class="ml-2"><i class="fa-solid fa-circle-arrow-right"></i></span></p> 
+                            </div>                                                
+                         </div>
+                       </div>
+                       <!-- item part end -->
+                       <!-- item part start -->
+                       <div class="sm:w-32 relative group max-w-460 sm:max-w-none mx-auto sm:mx-0 mt-5 sm:mt-0 box-border overflow-hidden rounded-lg">
+                        <img src="./images/33.png" alt="" class="w-full h-full lg:group-hover:rotate-12 lg:group-hover:scale-125 duration-500" >
+                         <div class="absolute top-0 left-0 w-full h-full  bg-gradient-to-t from-black duration-500  rounded-lg overflow-hidden flex justify-start items-end lg:sm:max-lg:translate-y-[85%] lg:translate-y-[25%] lg:group-hover:translate-y-0">
+                            <div class="">
+                                <p class=" ml-10 sm:max-md:ml-5 text-white font-IBM font-bold xl:text-40 text-3xl sm:text-xl  group-hover:pb-0">Club activities</p>
+                                <p class=" ml-10 sm:max-md:ml-5 text-white font-IBM font-normal xl:text-3xl sm:text-base text-lg mb-5 mt-5 sm:max-md:my-2 lg:opacity-0 lg:group-hover:opacity-100 ">View All Sports</p> 
+                                <div class="h-0.5 w-52 xl:w-72 ml-10 sm:max-md:ml-5 bg-white sm:max-lg:w-40 lg:opacity-0 lg:group-hover:opacity-100 "></div>                      
+                                <p class=" ml-10 sm:max-md:ml-5 text-white font-IBM font-normal xl:text-lg  py-5 lg:opacity-0 lg:group-hover:opacity-100 ">Dolor sit amet magna <span class="ml-2"><i class="fa-solid fa-circle-arrow-right"></i></span></p> 
+                            </div>                                                
+                         </div>
+                       </div>
+                       <!-- item part end -->
+                       <!-- item part start -->                 
+                       <div class="sm:w-32 relative group max-w-460 sm:max-w-none mx-auto sm:mx-0 mt-5 sm:mt-0 box-border overflow-hidden rounded-lg">
+                        <img src="./images/34.png" alt="" class="w-full h-full lg:group-hover:rotate-12 lg:group-hover:scale-125 duration-500" >
+                         <div class="absolute top-0 left-0 w-full h-full  bg-gradient-to-t from-black duration-500  rounded-lg overflow-hidden flex justify-start items-end lg:sm:max-lg:translate-y-[85%] lg:translate-y-[25%] lg:group-hover:translate-y-0">
+                            <div class="">
+                                <p class=" ml-10 sm:max-md:ml-5 text-white font-IBM font-bold xl:text-40 text-3xl sm:text-xl  group-hover:pb-0">Meet Our Team</p>
+                                <p class=" ml-10 sm:max-md:ml-5 text-white font-IBM font-normal xl:text-3xl sm:text-base text-lg mb-5 mt-5 sm:max-md:my-2 lg:opacity-0 lg:group-hover:opacity-100 ">The Instructors</p> 
+                                <div class="h-0.5 w-52 xl:w-72 ml-10 sm:max-md:ml-5 bg-white sm:max-lg:w-40 lg:opacity-0 lg:group-hover:opacity-100 "></div>                      
+                                <p class=" ml-10 sm:max-md:ml-5 text-white font-IBM font-normal xl:text-lg  py-5 lg:opacity-0 lg:group-hover:opacity-100 ">Dolor sit amet magna <span class="ml-2"><i class="fa-solid fa-circle-arrow-right"></i></span></p> 
+                            </div>                                                
+                         </div>
+                       </div>
+                       <!-- item part end -->
+                  </div>
+                 <!-- item part area -->
+
+             </div>
+         </section>
+         <!-- ========================== 
+               Boundaries Area  End
+         ============================ -->
+         <!-- ========================== 
+                Choose  Area  Start
+         ============================ -->
+          <section class="lg:pt-100 pt-14 lg:pb-60">
+              <div class="max-w-container mx-auto">
+                 <!-- title area part -->
+                 <div class="relative lg:mb-20">
+                    <p class="font-yellowtail font-normal text-3xl text-third text-center">Share The Excitement</p>
+                    <h2 class="font-IBM font-bold text-3xl lg:text-54 text-secondary leading-normal text-center ">Why Choose Us</h2>
+                    <div class="h-0.5 w-100 bg-hightlight my-6 hidden lg:block absolute -bottom-10 left-1/2 -translate-x-2/4"></div>
+                 </div>       
+                 <!-- title area part -->
+                   <div class="sm:flex justify-between flex-wrap  p-5 lg:p-2 xl:p-0">
+                       <!-- single items start--> 
+                       <div class="lg:w-25 sm:w-49 text-center border lg:border-0 p-5 lg:p-0 box-border pb-12 lg:pb-0 mb-7 rounded-md max-w-460 sm:max-w-none mx-auto sm:mx-0">
+                          <img src="./images/choose1.png" alt="" class="inline-block">
+                          <p class="font-IBM font-bold text-2xl text-secondary mt-5 mb-3">A Team Of Passionate Individuals</p>
+                          <p class="font-IBM font-normal text-lg text-secondary">Dolor sit amet mag eliqua esimod ipsum dolore suspendise quis  ultrices gravida risus.</p>
+                       </div>
+                         <!-- single items start-->
+                         <!-- single items End-->
+                         <div class="lg:w-25 sm:w-49 text-center border lg:border-0 p-5 lg:p-0 box-border pb-12 lg:pb-0 mb-7 rounded-md max-w-460 sm:max-w-none mx-auto sm:mx-0">
+                            <img src="./images/choose2.png" alt="" class="inline-block">
+                            <p class="font-IBM font-bold text-2xl text-secondary mt-5 mb-3">Learn To Train Your Body To Perform</p>
+                            <p class="font-IBM font-normal text-lg text-secondary">Dolor sit amet mag eliqua esimod ipsum dolore suspendise quis  ultrices gravida risus.</p>
+                         </div>
+                       <!-- single items start-->
+                        <!-- single items End-->
+                        <div class="lg:w-25 sm:w-49 text-center border lg:border-0 p-5 lg:p-0 box-border pb-12 lg:pb-0 mb-7 rounded-md max-w-460 sm:max-w-none mx-auto sm:mx-0">
+                            <img src="./images/choose3.png" alt="" class="inline-block">
+                            <p class="font-IBM font-bold text-2xl text-secondary mt-5 mb-3">Overcome Your Fears And Master Your Skills</p>
+                            <p class="font-IBM font-normal text-lg text-secondary">Dolor sit amet mag eliqua esimod ipsum dolore suspendise quis  ultrices gravida risus.</p>
+                         </div>
+                       <!-- single items start-->
+                        <!-- single items End-->
+                        <div class="lg:w-25 sm:w-49 text-center border lg:border-0 p-5 lg:p-0 box-border pb-12 lg:pb-0 mb-7 rounded-md max-w-460 sm:max-w-none mx-auto sm:mx-0">
+                            <img src="./images/choose4.png" alt="" class="inline-block">
+                            <p class="font-IBM font-bold text-2xl text-secondary mt-5 mb-3">Enjoy Extreme Activities Around The Globe</p>
+                            <p class="font-IBM font-normal text-lg text-secondary">Dolor sit amet mag eliqua esimod ipsum dolore suspendise quis  ultrices gravida risus.</p>
+                         </div>
+                         <!-- single items End-->
+                   </div>        
+              </div>
+          </section>        
+         <!-- ========================== 
+                Choose  Area  End
+         ============================ -->
+         <!-- ========================== 
+              Sports News Area Start
+         ============================ -->
+          <section class="lg:py-100 bg-eight">
+              <div class="max-w-container mx-auto">
+                <!-- title part start -->
+                <div class="lg:flex  p-5 lg:p-2  "> 
+                    <div class="lg:w-1/3">
+                       <h6 class="font-yellowtail font-normal text-3xl text-primary text-center lg:text-left">Share The Passion</h6>
+                       <h2 class="font-IBM font-bold text-3xl xl:text-54 text-secondary leading-normal text-center lg:text-left mb-5 lg:mb-0">Extreme Sports News</h2>
+                       <div class="h-0.5 w-60 bg-hightlight my-6 hidden lg:block"></div>
+                    </div>
+                    <div class="lg:w-2/3 lg:mt-12">
+                        <p class="font-IBM font-normal text-lg text-secondary lg:max-w-638  lg:ml-14 xl:ml-28 text-center lg:text-left">Dolor sit amet consectetur adipiscing elit sed con eiusmod tempor incididunt labore etys dolore magna aliqua. Quis ipsum suspendisse ultrices gravida risus ipsum dolore commodo viverra maecenas.</p>
+                    </div>
+                </div>
+                <!-- title part end -->
+                 <div class="sm:flex justify-between p-3 ">
+                       <!-- single items start --> 
+                       <div class="sm:w-32 shadow-xl box-border max-w-460 sm:max-w-none mx-auto sm:mx-0 rounded-b-lg">
+                        <img src="./images/news1.png" alt="" class="block w-full">
+                        <div class="lg:py-5 lg:px-6 p-4 text-center">
+                           <h4 class="font-IBM font-bold  text-xl  lg:text-28">Paragliding Adventures Across The World </h4>
+                           <p class="font-IBM font-normal text-base lg:text-lg my-4 ">Integer amet miut ipsum molestie bibendum vitae sitat ligula fermentum tellus</p>
+                            
+                        </div>
+                        <a href="" class="font-IBM font-bold text-base py-7 block border-t-2 border-[#eeeeee] text-center text-primary">Read Article</a>
+                       </div>
+                       <!-- single items start --> 
+                       <!-- single items end -->
+                       <div class="sm:w-32 shadow-xl box-border max-w-460 sm:max-w-none mx-auto sm:mx-0 mt-5 sm:mt-0 rounded-b-lg">
+                          <img src="./images/news2.png" alt="" class="block rounded-t-lg w-full">
+                          <div class="lg:py-5 lg:px-6 p-4 text-center ">
+                             <h4 class="font-IBM font-bold text-xl  lg:text-28">All-Terrain Vehicle  Excursions For The Family</h4>
+                             <p class="font-IBM font-normal text-base lg:text-lg my-4 ">Integer amet miut ipsum molestie bibendum vitae sitat ligula fermentum tellus</p>
+                              
+                          </div>
+                          <a href="" class="font-IBM font-bold text-base py-7 block border-t-2 border-[#eeeeee] text-center text-primary">Read Article</a>
+                       </div>
+                       <!-- single items start --> 
+                       <!-- single items end -->
+                       <div class="sm:w-32 shadow-xl box-border max-w-460 sm:max-w-none mx-auto sm:mx-0  mt-5 sm:mt-0 rounded-b-lg">
+                          <img src="./images/news3.png" alt="" class="block rounded-t-lg w-full">
+                          <div class="lg:py-5 lg:px-6 p-4 text-center">
+                             <h4 class="font-IBM font-bold text-xl  lg:text-28">Best Skateboarding Big Air Skate Parks</h4>
+                             <p class="font-IBM font-normal text-base lg:text-lg my-4 ">Integer amet miut ipsum molestie bibendum vitae sitat ligula fermentum tellus</p>
+                              
+                          </div>
+                          <a href="" class="font-IBM font-bold text-base py-7 block border-t-2 border-[#eeeeee] text-center  text-primary">Read Article</a>
+                       </div>
+                       <!-- single items end -->                      
+                 </div>
+              </div>
+           </section>      
+           <!-- ========================== 
+              Sports News Area End
+           ============================ -->
+           <!-- ========================== 
+               Picture items Area Start
+           ============================ -->
+            <section class="py-10">
+              <div class="max-w-container mx-auto ">
+                  <div class="flex justify-between flex-wrap items-center px-3.5">
+                     <div class="sm:w-1/5 w-[47%] mt-5">
+                        <img src="./images/01.png" alt="" class="block mx-auto ">
+                     </div>
+                     <div class="sm:w-1/5 w-[47%] mt-5">
+                        <img src="./images/02.png" alt="" class="block mx-auto">
+                     </div>
+                     <div class="sm:w-1/5 w-[47%] mt-5">
+                        <img src="./images/03.png" alt="" class="block mx-auto">
+                     </div>
+                     <div class="sm:w-1/5 w-[47%] mt-5">
+                        <img src="./images/04.png" alt=""class="block mx-auto">
+                     </div>
+                     <div class="sm:w-1/5 mx-auto mt-5">
+                        <img src="./images/05.png" alt=""class="block mx-auto">
+                     </div>
+                     
+                  </div>
+              </div>
+            </section>
+            <!-- ========================== 
+               Picture items Area End
+           ============================ -->
+            <!-- ========================== 
+               Footer  Area  Start 
+           ============================ -->
+          
+           <!-- ========================== 
+               Footer  Area  Start 
+           ============================ -->
+           <section>           
+              <div class="flex">
+                <div class="lg:w-[30%] py-16"
+                    style="background: url(./images/footer1.png) no-repeat center; background-size: cover;">
+                </div>
+                <div class="lg:w-[70%] w-full bg-nine py-16 px-10 text-center lg:text-left">
+                    <div class="max-w-container mx-auto lg:px-14 px-0">
+                        <img src="./images/logo.png" alt="" class="block mx-auto lg:mx-0">
+                        <!-- flex item -->
+                        <div class="lg:flex justify-between lg:mt-10 items-center border-b pb-10 p-3.5">
+                            <a href="" class="bg-primary py-2  px-5  inline-block font-IBM font-medium text-lg text-white  hover:bg-white duration-500 hover:text-black rounded-md mt-10  lg:mt-0">Join Our Club</a>
+                            <p class="font-IBM font-normal text-lg lg:max-w-459 xl:max-w-569 text-white mt-5">Dolor sit amet ipsum consectetur adipiscing elit sed eiusmod tempor incididunt ut labore dolore magna aliqua. Quis ipsum suspendisse  ultrices ipsum sed dolor.</p>
+                        </div>
+                        <!-- flex item -->
+                        <!-- flex item -->
+                         <div class="lg:flex items-center my-10 gap-x-20">
+                            <p class="font-IBM font-bold text-3xl text-white ">Contact Us</p>
+                            <p class="font-IBM font-normal text-lg text-white">586 Avada Avenue, Avadaville 30221 – USA</p>
+                         </div>
+                         <!-- flex item -->
+                         <p class="font-IBM font-normal text-lg text-white">© 2021 | Avada Theme by ThemeFusion | All Rights Reserved.</p>
+                    </div>
+                </div>                
+            </div>
+           </section>
+
+
+           
+           <script>
+            const navLinks = document.querySelector('.nav-links')
+            function onToggleMenu(e){
+                e.name = e.name === 'menu' ? 'close' : 'menu'
+                navLinks.classList.toggle('left-[0.1%]')
+            }
+        </script>
+   
+
+</body>
+</html>
